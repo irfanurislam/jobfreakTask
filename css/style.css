@@ -1,0 +1,35 @@
+/* CSS for left panel */
+#left-panel {
+    float: left;
+    width: 20%;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+/* CSS for content area */
+#content {
+    margin-left: 20%; /* Adjust the margin to match the width of the left panel */
+    height: 100vh;
+    padding: 20px;
+}
+
+/* CSS for showing content based on anchor links */
+#content > div {
+    display: none;
+}
+
+#content > div:target {
+    display: block;
+}
+
+/* CSS for anchor links */
+#left-panel a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+#left-panel a:hover {
+    background-color: #ddd;
+}
